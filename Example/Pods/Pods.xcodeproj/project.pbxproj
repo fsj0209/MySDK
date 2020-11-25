@@ -17,6 +17,8 @@
 		96885757BC54C6ADB2CF451B427F4024 /* MySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3560C6B24A2ABE75A0CE29E80B85CD4 /* MySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB3319C631A00DA19C3CD1DB6C4F1FC4 /* MyObjcet.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C185AD3D2A1D165673A2CAD62364BA /* MyObjcet.m */; };
 		ECA4A2DD8FB46A8E639B5C35546C46C7 /* MyObjcet.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CC11D06CC5182C4B41BE2B45E198B75 /* MyObjcet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F68E9D5D256E2690009CAB56 /* HeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F68E9D5B256E2690009CAB56 /* HeObject.h */; };
+		F68E9D5E256E2690009CAB56 /* HeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F68E9D5C256E2690009CAB56 /* HeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		335EFD0998A8B2086BFAC3D478D6CA30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		335EFD0998A8B2086BFAC3D478D6CA30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		347DACEB667172DE38D993C357A52D7F /* YourObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YourObject.h; path = MySDK/Classes/YourObject.h; sourceTree = "<group>"; };
 		3B743CFF2B9348043B14BD360C96F8EC /* Pods-MySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		404D8E1E0AAABD057331C3D1FE810513 /* MySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySDK-prefix.pch"; sourceTree = "<group>"; };
@@ -40,22 +42,24 @@
 		7CC11D06CC5182C4B41BE2B45E198B75 /* MyObjcet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MyObjcet.h; path = MySDK/Classes/MyObjcet.h; sourceTree = "<group>"; };
 		912DE95F042413B8FBF14AADA71E9F7F /* MySDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MySDK-Info.plist"; sourceTree = "<group>"; };
 		91D61CEEC8287AA88CB6F8AB955AF8C9 /* Pods-MySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		995DDB3DB0B9177E57ADDA6561A7DCC6 /* MySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MySDK.framework; path = MySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		995DDB3DB0B9177E57ADDA6561A7DCC6 /* MySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD99ED25EDBE924B5B5B863C59E0356 /* Pods-MySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C49741701D41C1FAA5B8AAB65162416 /* Pods-MySDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MySDK_Tests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB73FF4F9C5A49ECD9C741701FFA2BDA /* Pods-MySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MySDK_Tests.modulemap"; sourceTree = "<group>"; };
 		AC9C1F2DDE05486134111BB0FE1CC499 /* MySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MySDK.debug.xcconfig; sourceTree = "<group>"; };
-		B9572C565C096F11C0668A3DFE3EC655 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B9572C565C096F11C0668A3DFE3EC655 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BD77EDC4853F68910460969A24CA2B6D /* Pods-MySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C086BC2C6E46EAEBEF9FBE3DE53DF100 /* Pods-MySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3560C6B24A2ABE75A0CE29E80B85CD4 /* MySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MySDK-umbrella.h"; sourceTree = "<group>"; };
 		D07F655A6B860AE8910CBDE6E4C4F5BC /* Pods-MySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D9C185AD3D2A1D165673A2CAD62364BA /* MyObjcet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MyObjcet.m; path = MySDK/Classes/MyObjcet.m; sourceTree = "<group>"; };
-		DC85B985F41BBF2570BA4E8B8312CD33 /* MySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DC85B985F41BBF2570BA4E8B8312CD33 /* MySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E079C4015469A9C5159CADC9FC9C1CEB /* YourObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YourObject.m; path = MySDK/Classes/YourObject.m; sourceTree = "<group>"; };
 		E87927BF087C4F5BC1945ECEFFB2F5C4 /* MySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MySDK-dummy.m"; sourceTree = "<group>"; };
-		EFDA608F1984FAA1934186FED6D11828 /* Pods_MySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MySDK_Tests.framework; path = "Pods-MySDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDA608F1984FAA1934186FED6D11828 /* Pods_MySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68E9D5B256E2690009CAB56 /* HeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HeObject.h; path = MySDK/Classes/HeObject.h; sourceTree = "<group>"; };
+		F68E9D5C256E2690009CAB56 /* HeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HeObject.m; path = MySDK/Classes/HeObject.m; sourceTree = "<group>"; };
 		FAEFFA9C964928C03A6804C670F89597 /* Pods-MySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MySDK_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,8 @@
 				D9C185AD3D2A1D165673A2CAD62364BA /* MyObjcet.m */,
 				347DACEB667172DE38D993C357A52D7F /* YourObject.h */,
 				E079C4015469A9C5159CADC9FC9C1CEB /* YourObject.m */,
+				F68E9D5B256E2690009CAB56 /* HeObject.h */,
+				F68E9D5C256E2690009CAB56 /* HeObject.m */,
 				3EF8E7D7B7C138C05FF20F5CF3CC71B1 /* Pod */,
 				E6AF88E539528902FA4AE03DB44B3352 /* Support Files */,
 			);
@@ -194,6 +200,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68E9D5D256E2690009CAB56 /* HeObject.h in Headers */,
 				ECA4A2DD8FB46A8E639B5C35546C46C7 /* MyObjcet.h in Headers */,
 				96885757BC54C6ADB2CF451B427F4024 /* MySDK-umbrella.h in Headers */,
 				2D16182D797EEA09B5EB61A9000F27E8 /* YourObject.h in Headers */,
@@ -299,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB3319C631A00DA19C3CD1DB6C4F1FC4 /* MyObjcet.m in Sources */,
+				F68E9D5E256E2690009CAB56 /* HeObject.m in Sources */,
 				921317A435E28EB33F3A29464BBE2959 /* MySDK-dummy.m in Sources */,
 				2807B8E429AACD926E827520A09721D3 /* YourObject.m in Sources */,
 			);
@@ -378,8 +386,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
