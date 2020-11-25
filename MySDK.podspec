@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MySDK'
-  s.version          = '3.1'
+  s.version          = '3.2'
   s.summary          = 'hello everyone MySDK.'
 
 # This description is used to generate tags and improve search results.
@@ -27,6 +27,10 @@ TODO: Add long description of the pod here.
   s.author           = { 'fsj0209@foxmail.com' => 'fansenjun@infinities.com.cn' }
   s.source           = { :git => 'https://github.com/fsj0209/MySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  
+  s.static_framework = true
+  s.pod_target_xcconfig = {'EXCLUDED_ARCHS [sdk = iphonesimulator *]'=>'arm64'}
+  s.user_target_xcconfig = {'EXCLUDED_ARCHS [sdk = iphonesimulator *]'=>'arm64 '}
 
   s.ios.deployment_target = '9.0'
 
