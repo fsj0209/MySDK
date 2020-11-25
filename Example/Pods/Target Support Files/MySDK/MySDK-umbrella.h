@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "MyObjcet.h"
 
 FOUNDATION_EXPORT double MySDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char MySDKVersionString[];
