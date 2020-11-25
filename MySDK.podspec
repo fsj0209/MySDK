@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MySDK'
-  s.version          = '3.0'
+  s.version          = '3.1'
   s.summary          = 'hello everyone MySDK.'
 
 # This description is used to generate tags and improve search results.
@@ -30,10 +30,10 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MySDK/*.{h,m}'
-  s.source_files = 'MySDK'
-  s.source_files = 'MySDK/**/*.{h,m}'
-  s.source_files = 'MySDK/Classes/**/*.h'
+  #s.source_files = 'MySDK/*.{h,m}'
+  #s.source_files = 'MySDK'
+  #s.source_files = 'MySDK/**/*.{h,m}'
+  s.source_files = 'MySDK/Classes/**/*'
   
   # s.resource_bundles = {
   #   'MySDK' => ['MySDK/Assets/*.png']
@@ -41,5 +41,6 @@ TODO: Add long description of the pod here.
 
   s.public_header_files = 'MySDK/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 2.3'
+  
 end
